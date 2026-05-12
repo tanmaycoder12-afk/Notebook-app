@@ -13,4 +13,4 @@ A browser-based notebook with stylus support.
 HTML, CSS, JavaScript
 
 ## Live Demo
-https://6a02c35fb91f1cec9826e9ae--notepaddev-app.netlify.app/
+https://notepad-dev.netlify.app/

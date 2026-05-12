@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;
+  overflow: hidden;
+}
+
+/* ── TOP BAR ── */
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 54px;
+  background: #16213e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  border-bottom: 2px solid #7c3aed;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#pageNum {
+  font-size: 13px;
+  color: #7c3aed;
+  background: #0f3460;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 1px solid #7c3aed;
+}
+
+/* ── CANVAS AREA ── */
+.canvas-container {
+  position: fixed;
+  top: 54px;
+  bottom: 64px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: #fdfaf3;
+}
+
+canvas {
+  display: block;
+  background: repeating-linear-gradient(
+    #fdfaf3,
+    #fdfaf3 31px,
+    #c9d4e8 32px
+  );
+}
+
+/* ── BOTTOM BAR ── */
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: #16213e;
+  border-top: 2px solid #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 8px;
+  z-index: 10;
+  overflow-x: auto;
+}
+
+/* ── BUTTONS ── */
+button {
+  border: 1px solid #7c3aed;
+  background: #0f3460;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 36px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:active {
+  background: #7c3aed;
+  transform: scale(0.95);
+}
+
+button:nth-child(1) {
+  background: #ffffff;
+  color: #000000;
+  border-color: #cccccc;
+}
+
+button:nth-child(2) {
+  background: #fff0f0;
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+button:nth-last-child(1),
+button:nth-last-child(2) {
+  background: #7c3aed;
+  border-color: #a78bfa;
+}
+
+button.active-eraser {
+  background: #7c3aed;
+  border-color: #a78bfa;
+}

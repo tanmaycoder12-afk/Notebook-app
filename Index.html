@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span class="title">My Notes</span>
+  <span id="pageNum">Page 1</span>
+</div>
+
+<div class="canvas-container">
+  <canvas id="board"></canvas>
+</div>
+
+<div class="bottombar">
+  <button onclick="setColor('black')" title="Black">⚫</button>
+  <button onclick="setColor('red')" title="Red">🔴</button>
+  <button onclick="setSize(2)" title="Thin">𝗧</button>
+  <button onclick="setSize(6)" title="Thick">𝗕</button>
+  <button onclick="toggleEraser()" title="Eraser">⌫</button>
+  <button onclick="undo()" title="Undo">↺</button>
+  <button onclick="redo()" title="Redo">↻</button>
+  <button onclick="prevPage()" title="Prev">←</button>
+  <button onclick="nextPage()" title="Next">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
